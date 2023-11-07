@@ -1,5 +1,5 @@
 package entities;
 
-public class Bus {
+public class Bus extends Vehicle {
 
 }
