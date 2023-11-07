@@ -20,5 +20,9 @@ public class Truck extends Vehicle {
 	public void setAxles(Integer axles) {
 		this.axles = axles;
 	}
+	
+	public String toString() {
+		return "Axles: " + axles;
+	}
 
 }

@@ -21,6 +21,8 @@ public class Bus extends Vehicle {
 		this.seats = seats;
 	}
 	
-	
+	public String toString() {
+		return "Seats: " + seats;
+	}
 
 }

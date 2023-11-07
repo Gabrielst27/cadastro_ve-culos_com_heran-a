@@ -29,5 +29,9 @@ public class Vehicle {
 	public void setYear(Integer year) {
 		this.year = year;
 	}
+	
+	public String toString() {
+		return "Plate: " + plate + ", Year: " + year;
+	}
 
 }
