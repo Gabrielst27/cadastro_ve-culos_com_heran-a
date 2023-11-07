@@ -19,9 +19,9 @@ public class Program {
 		List<Truck> trucks = new ArrayList<>();
 		List<Bus> busses = new ArrayList<>();
 		
-		char aux = 'y';
+		String aux = "y";
 		
-		while (aux == 'y') {
+		while (aux.toUpperCase().equals("Y")) {
 			System.out.print("Enter vehicle type (Bus or Truck): ");
 			String type = sc.nextLine();
 			
@@ -39,7 +39,7 @@ public class Program {
 				busses.add(bus);
 				
 				System.out.print("Continue? (y/n): ");
-				aux = sc.next().charAt(0);
+				aux = sc.next();
 			} else if(type.toUpperCase().equals("TRUCK")) {
 				System.out.print("Enter vehicle plate: ");
 				String plate = sc.nextLine();
@@ -54,12 +54,24 @@ public class Program {
 				trucks.add(truck);
 				
 				System.out.print("Continue? (y/n): ");
-				aux = sc.next().charAt(0);
+				aux = sc.next();
 			} else {
 				System.out.printf("ERROR! Invalid vehicle!\nTry again? (y/n): ");
-				aux = sc.next().charAt(0);
+				aux = sc.next();
 			}
 			sc.nextLine();
+		}
+		
+		System.out.println();
+		System.out.println("Busses: ");
+		for(Bus b : busses) {
+			System.out.println(b);
+		}
+		
+		System.out.println();
+		System.out.println("Trucks: ");
+		for(Truck t : trucks) {
+			System.out.println(t);
 		}
 		
 		
