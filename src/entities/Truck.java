@@ -22,7 +22,7 @@ public class Truck extends Vehicle {
 	}
 	
 	public String toString() {
-		return "Axles: " + axles;
+		return "Plate: " + plate + ", Year: " + year + ", Axles: " + axles;
 	}
 
 }

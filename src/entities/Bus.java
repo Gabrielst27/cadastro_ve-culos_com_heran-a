@@ -22,7 +22,7 @@ public class Bus extends Vehicle {
 	}
 	
 	public String toString() {
-		return "Seats: " + seats;
+		return "Plate: " + plate + ", Year: " + year + ", Seats: " + seats;
 	}
 
 }

@@ -2,8 +2,8 @@ package entities;
 
 public class Vehicle {
 	
-	private String plate;
-	private Integer year;
+	protected String plate;
+	protected Integer year;
 	
 	public Vehicle() {
 		
